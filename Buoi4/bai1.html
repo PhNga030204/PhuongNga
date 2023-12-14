@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">header</div>
+        <div class="body1">
+           <div class="col" style=" background-color: rgb(133, 140, 140);">col1</div>
+           <div class="col" style=" background-color: rgb(158, 167, 167);">col2</div>
+           <div class="col" style=" background-color: rgb(184, 193, 193);">col3</div>
+        </div>
+        <div class="footer"> footer</div>
+  
+    </div>
+</body>
+</html>
+
+<style>
+
+
+.container {
+  margin: auto;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+
+.header {
+ 
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff; 
+}
+
+
+
+/*.body1::after{
+  content: "";
+  display: block;
+  clear: both; */
+
+.body1{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.col {
+  width: 32%;
+  height: 500px;
+  padding-left: 5px;
+}
+
+
+
+.footer {
+
+  text-align: center;
+  padding: 15px;
+  background-color: #333; 
+  color: #fff; 
+}
+
+@media (max-width: 600px) {
+    .body1{
+        flex-direction: column;
+    }
+    .col{
+        width: 100%;
+    }
+}
+
+</style>
