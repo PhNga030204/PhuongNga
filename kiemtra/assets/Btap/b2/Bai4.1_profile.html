@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="https://lh3.googleusercontent.com/pw/ADCreHcVkns6UDHJMNsB0rUS5UHNxPEOdFO9Cw8Yme377X89WPWXZyzQAAVrfoKij2qb71QgNBATHOfOUtkx5TdZQ5x4ue2j4W_L_1IiE_WmZ8MGRjHvY33YBrAbLQ4aAZYuUy4BUaf6YFEI9oxgCYgLV0eYP_YzTOmtzMuTYd6YKMLcvON5_Kt184yzB7UfyekPQ6RqaFYu0oSr3fEmEEhRJxokpj6vOByKXEkaMGBTWmw-TjN1uxgsjfwEUcYjAnQ6gbzi6FtYvYZWfL--8yVowZsBRoSSvFKqAjrOeZtMqD8cqemZNvo-bph7ia9hcUvNCDo7V0Ggqhw1rXjFnuIB3-Qf_8rSWFUcSRAevhijjI2Se2Af-Rfs-kLrjwezdhj_wmajQxtAVQ4T5yFdnj_BOkpfDEm5rBSbtOL9FSQ9lrwhLuVaqsFaeEA7Cbr8gVFBwPm2VdZ4IwDXfgS3-2Qlzx8gQ8FHbpo4A9CYe7cmIUctnnj1nUctOMKeCOzu-976kvO-FpAEjXdmLa-qjsujnhcg1BWRxSkn3uQVAf180qy203Pp07KWjCBajERBQAEj8tx1o47IhB-IrB-1ZxeAlvuT3NPZdnsfoo68gaxyPslejaMByhoYJlw2yj4C_9pz_YrCnVhFmV1WI9FVcGPwxUA3OtxcJ12ea8AHikkhGj_Kug48fQm9QCKl9R0-2Sf5CNajjeL-CJP-i9D2cX4ehqhhCIngXUbl42E4p6Xka5RyP-rzjVzjHXAWBvrJhywmOe111v37LIDy6dI6ulwP3ZZ3zB-87JvR8g5gLAqcRNPFZ8BOJNcCeOmW7IGwPUvRyfcvnAQHtj-P8OjKi_VxqlAE59mO4s-s_n8SmCZqfZRE8EF28khH-wwYP9rz3OxtrEBLQI2oM5OngNyDtD04THtywQHhEWZSoDWE4y1XCq8fj8IJjXBdeSfqqpgaa0_8cRwSh-WyAa66=w1138-h720-s-no-gm?authuser=1">
+    <title>Profile Card</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    
+    <div class="card">
+      <div class="card__img">
+        <img src="Nga2.png"/>
+      </div>
+      <h2>Nguyen Phuong Nga</h2>
+      <p>Msv: 222001478</p>
+      <div class="card__social">
+        <a target="_black" href="https://www.facebook.com/npnyhvh1811">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a target="_black" href="https://www.youtube.com/">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+      <iframe width="460" height="215" src="https://www.youtube.com/embed/2JfAyAh8L_M?si=zqVw53t0YpaNuNiu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <a href="https://www.facebook.com/messages/t/npnyhvh1811/"><button> Contact me</button> </a>
+    </div>
+    
+  </body>
+</html>
+
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+:root {
+  --pink-color: #f2726a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(45deg, rgb(255, 224, 216), #ff926b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width:460px;
+  height: 600px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #242628;
+  overflow: hidden;
+  margin: 0 30px;
+}
+
+.card__img {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  transition: 0.25s;
+  margin: 0 auto;
+  transform: translateY(25px);
+  border-radius: 50%;
+  border: 4px solid var(--pink-color);
+  cursor: pointer;
+}
+
+.card__img:hover {
+  width: 100%;
+  height: 100%;
+  border-radius: unset;
+  border: unset;
+  transform: unset;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+h2 {
+  color: white;
+  margin-top: 40px;
+}
+
+p {
+  color: var(--pink-color);
+}
+
+.card__social a {
+  text-decoration: none;
+  color: white;
+  margin: 25px 20px 40px;
+  display: inline-block;
+  font-size: 18px;
+  transition: 0.25s;
+}
+
+.card__social a:hover {
+  color: var(--pink-color);
+}
+
+button {
+  outline: none;
+  border: none;
+  color: white;
+  background-color: transparent;
+  border: 1px solid var(--pink-color);
+  padding: 10px 20px;
+  border-radius: inherit;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+button:hover {
+  background-color: var(--pink-color);
+}
+</style>
