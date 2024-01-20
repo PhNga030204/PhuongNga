@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+       var size="";
+       var sizeAr = document.getElementsByName("rdSize");
+       for (var i=0; i<sizeAr.length; i++){
+        if (sizeAr[i].checked){
+            size=sizeAr[i].value;
+        }
+       }
+       str=str+ "Kich thuoc ban da chon la:" + Size
+    </script>
+</head>
+<body>
+    <input type="radio" value="Lon" name="rdSize" checked=checked/>Lon<br/>
+    <input type="radio" value="Vua" name="rdSize"/>Vua <br/>
+    <input type="radio" value="Nho" name="rdSize"/>Nho<br/>
+   
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function validateForm(){
+         var name = document.forms[0].txtName.value;
+         if (name==""){
+            alert("Hay nhap ten!");
+            return false;
+         }
+         else {
+            alert("Hi " + name +" !");
+            return true;
+         }
+        }
+    </script>
+</head>
+<body>
+    <form action="#" onsubmit="return validateForm()">
+    <p> Name: <input type="text" name= "txtName" /> </p>
+    <p><input type="submit" value="Submit"/></p>
+</form>
+</body>
+</html>
