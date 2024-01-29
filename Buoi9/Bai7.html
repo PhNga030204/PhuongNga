@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="b7.css">
+    <title>Menu đa cấp</title>
+</head>
+<body>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Thiết kế web</button>
+        <div id="Dropdown1" class="dropdown-content">
+          <a href="#">HTML</a>
+          <a href="#">CSS</a>
+          <a href="#">Javascipt</a>
+        </div>
+      </div>
+      
+      <script>
+      function myFunction() {
+        document.getElementById("Dropdown1").classList.toggle("show");
+      }
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
+      
+</body>
+</html>

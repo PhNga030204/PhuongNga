@@ -1,0 +1,60 @@
+header .song_side .navb {
+    width: 75%;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    position: fixed;
+    border-radius: 32px;
+    top: 0;
+    z-index: 99;
+    padding: 10px calc((100% - 1000px)/2);
+}
+*{
+    transition: 0.4s;
+}
+
+header .menu_side .btn_i{
+    margin-left: 200px;
+    margin-top: -40px;
+    font-size: 25px;
+}
+
+header .menu_side .sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: bisque;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(40px);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+}
+
+header .menu_side .sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(17, 20, 22);
+    display: block;
+    transition: 0.3s;
+}
+
+header .menu_side .sidenav a:hover{
+    color: #f1f1f1;
+}
+
+header .menu_side .sidenav .closebtn {
+    top: 0;
+    font-size: 50px;
+}
+
+
+@media screen and (max-height: 450px) {
+    header .menu_side   .sidenav {padding-top: 15px;}
+    header .menu_side  .sidenav a {font-size: 18px;}
+  } 

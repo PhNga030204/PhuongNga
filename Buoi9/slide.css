@@ -1,0 +1,54 @@
+header .song_side .content .mySlides {
+display:none;
+} 
+
+header .song_side .content .container{
+width: 100%;
+height: 320px;
+overflow: hidden;
+/* margin-left: -45px;
+margin-top: 20px; */
+margin: auto;
+border-radius: 20px;
+/* z-index: -1; */
+}
+header .song_side .content .displaycontainer{
+position:relative;
+}
+header .song_side .content .button{
+font-size: 30px;
+border: none;
+border-radius: 10px;
+display: inline-block;
+padding: 0 12px 5px 12px;
+vertical-align: middle;
+overflow: hidden;
+text-decoration: none;
+color: #ffffff;
+background-color: #00000000;
+text-align: center;
+cursor: pointer;
+}
+header .song_side .content .button:hover{
+color: #000000;
+background-color: rgb(189, 189, 189);
+}
+header .song_side .content .left{
+position: absolute;
+top: 50%;
+left: 0;
+transform: translate(0,-50%);
+}
+header .song_side .content .right{
+position: absolute;
+top: 50%;
+right: 0;
+transform: translate(0,-50%);
+}
+@media screen and (max-width: 800px) {
+    header .song_side .content .container{
+    width: 55vw;
+    height: 70vw;
+    margin: 20px calc((100% - 55vw)/2);
+    border-radius: 10px;
+}}

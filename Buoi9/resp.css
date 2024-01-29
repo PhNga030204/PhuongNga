@@ -1,0 +1,21 @@
+/* mobile first */
+@media screen and (max-with: 1080px) {
+   .menu_song {
+        display: none;
+    }
+}
+
+@media screen and (max-with: 800px) {
+    .menu_song {
+         display: none;
+     }
+ }
+
+ @media screen and (max-with: 600px) {
+    .menu_song {
+         display: none;
+     }
+     .h5{
+        overflow: hidden;
+     }
+ }
